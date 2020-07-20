@@ -1,0 +1,12 @@
+/Users/rodneykam/Projects/PlayingCards/bin/Debug/netcoreapp3.1/PlayingCards.deps.json
+/Users/rodneykam/Projects/PlayingCards/bin/Debug/netcoreapp3.1/PlayingCards.runtimeconfig.json
+/Users/rodneykam/Projects/PlayingCards/bin/Debug/netcoreapp3.1/PlayingCards.runtimeconfig.dev.json
+/Users/rodneykam/Projects/PlayingCards/bin/Debug/netcoreapp3.1/PlayingCards.dll
+/Users/rodneykam/Projects/PlayingCards/bin/Debug/netcoreapp3.1/PlayingCards.pdb
+/Users/rodneykam/Projects/PlayingCards/obj/Debug/netcoreapp3.1/PlayingCards.csprojAssemblyReference.cache
+/Users/rodneykam/Projects/PlayingCards/obj/Debug/netcoreapp3.1/PlayingCards.AssemblyInfoInputs.cache
+/Users/rodneykam/Projects/PlayingCards/obj/Debug/netcoreapp3.1/PlayingCards.AssemblyInfo.cs
+/Users/rodneykam/Projects/PlayingCards/obj/Debug/netcoreapp3.1/PlayingCards.csproj.CoreCompileInputs.cache
+/Users/rodneykam/Projects/PlayingCards/obj/Debug/netcoreapp3.1/PlayingCards.dll
+/Users/rodneykam/Projects/PlayingCards/obj/Debug/netcoreapp3.1/PlayingCards.pdb
+/Users/rodneykam/Projects/PlayingCards/obj/Debug/netcoreapp3.1/PlayingCards.genruntimeconfig.cache
