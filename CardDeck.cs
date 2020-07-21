@@ -4,24 +4,45 @@ using System.Linq;
 
 namespace PlayingCards
 {
+    public enum Rank
+    {
+        Ace = 0,
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King
+    }
+
+    public enum Suit
+    {
+        Diamonds = 0,
+        Clubs,
+        Hearts,
+        Spades
+    }
+
     public class Card
     {
-        private string[] Suit = new string[] {"Diamonds", "Clubs", "Hearts",  "Spages"};
-        private string[] Rank = new string[] {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "Ten", "Jack","Queen","King"};
-
-        public Card(int r, int s)
+        private Rank rank { get; set; }
+        private Suit suit { get; set; }
+        
+        public Card(int iRank, int iSuit)
         {
-            rank = r;
-            suit = s;
-
+            this.rank = (Rank)iRank;
+            this.suit = (Suit)iSuit;
         }
 
-        private int rank { get; set; }
-        private int suit { get; set; }
-        
         public void ShowCard()
         {
-            Console.WriteLine("{0} of {1}", Rank[rank], Suit[suit]);
+            Console.WriteLine("{0} of {1}", rank, suit);
         }
     }
 

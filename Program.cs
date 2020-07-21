@@ -12,10 +12,13 @@ namespace PlayingCards
             
             cardDeck.Deal().ShowCard();
             cardDeck.Deal().ShowCard();
+
             cardDeck.Deal().ShowCard();
             cardDeck.Deal().ShowCard();
             cardDeck.Deal().ShowCard();
+
             cardDeck.Deal().ShowCard();
+
             cardDeck.Deal().ShowCard();
        }
     }
