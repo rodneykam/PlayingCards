@@ -6,6 +6,8 @@ namespace PlayingCards
 {
     public class Card
     {
+        private string[] Suit = new string[] {"Diamonds", "Clubs", "Hearts",  "Spages"};
+        private string[] Rank = new string[] {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "Ten", "Jack","Queen","King"};
 
         public Card(int r, int s)
         {
@@ -19,7 +21,7 @@ namespace PlayingCards
         
         public void ShowCard()
         {
-            Console.WriteLine("Rank: {0} Suit: {1}", this.rank, this.suit);
+            Console.WriteLine("{0} of {1}", Rank[rank], Suit[suit]);
         }
     }
 
@@ -30,6 +32,7 @@ namespace PlayingCards
         public Deck()
         {
             cards = new List<Card>();
+
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 13; j++)
@@ -41,14 +44,43 @@ namespace PlayingCards
 
         }
 
+        private void RiffleShuffle()
+        {
+            int i = cards.Count / 2;
+            int j = cards.Count - 1;
+
+            while(i > 0)
+            {
+                var temp = cards[i];
+                cards[i--] = cards[j];
+                cards[j--] = temp;
+            }
+            
+        }
+        private void RandomShuffle()
+        {
+            Random rnd = new Random();
+            for (int i = cards.Count-1; i > 0; i--)
+            {
+                int index = rnd.Next(i+1);
+                var temp = cards[index];
+                cards[index] = cards[i];
+                cards[i] = temp;
+            }
+        }
+        
         public void Shuffle()
         {
-
+            RandomShuffle();
+            RiffleShuffle();
         }
 
         public Card Deal()
         {
-            return cards.First();
+            var card = cards.First();
+            cards.RemoveAt(0);
+
+            return card;
         }
     }
         

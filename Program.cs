@@ -9,11 +9,15 @@ namespace PlayingCards
         {
             var cardDeck = new Deck();
             cardDeck.Shuffle();
-            var topCard = cardDeck.Deal();
-            topCard.ShowCard();
             
-            Console.WriteLine("Hello World!");
-        }
+            cardDeck.Deal().ShowCard();
+            cardDeck.Deal().ShowCard();
+            cardDeck.Deal().ShowCard();
+            cardDeck.Deal().ShowCard();
+            cardDeck.Deal().ShowCard();
+            cardDeck.Deal().ShowCard();
+            cardDeck.Deal().ShowCard();
+       }
     }
 }
 
